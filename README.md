@@ -1,38 +1,69 @@
-# Official Matlab Implementation of Fuzzy Natural Neighbors for Outlier Detection
+# 🔎 Official MATLAB Implementation: Fuzzy Natural Neighbors for Outlier Detection (FuNaN)
 
-This is the official Matlab implementation of the *Fuzzy Natural Neighbors for Outlier Detection* (FuNaN) method based on the paper by Saltos, R., Weber, R., and Pedrycz, W., "Fuzzy natural neighbors for outlier detection,"
-Applied Soft Computing, 2025, 114114, ISSN 1568-4946, https://doi.org/10.1016/j.asoc.2025.114114.
+This repository contains the **official MATLAB implementation** of the **Fuzzy Natural Neighbors for Outlier Detection (FuNaN)** method.
 
-## Overview
+FuNaN is a novel, unsupervised anomaly detection algorithm that leverages the mathematical structure of **Natural Neighbors** alongside the robustness of **fuzzy sets** to effectively model the inherent uncertainty in outlier definitions. It computes outlier scores based on both the local and global characteristics of the data.
 
-FuNaN methods are unsupervised anomaly detection algorithms that combines the strengths of natural neihbors with fuzzy sets to leverage the uncertainty in outlier definitions. The algorithms use different strategies to compute the outlier scores based on the local and global information of the data.
+---
 
-The project includes:
-- Implementation of the FuNaN methods described in the paper.
-- Implementation of other NaN outlier detection algorithms.
-- The datasets used in the computational experiments.
+## 📚 Reference Paper
 
-## Requirements
-- Matlab 2024b or higher.
+If you use this code in your research, please cite the following paper:
 
-## Installation
+> Saltos, R., Weber, R., & Pedrycz, W. (2025). **Fuzzy natural neighbors for outlier detection.** *Applied Soft Computing*, 114114, ISSN 1568-4946.
+>
+> **DOI:** `https://doi.org/10.1016/j.asoc.2025.114114`
 
-1. Download the repository
-2. Add to Matlab Path.
+---
 
-### Input Data Format
+## ✨ Key Features
 
-The code expects data in MATLAB .mat format with:
-- 'Data': Matrix where rows are samples and columns are features
-- 'y': Vector of labels where anomalies are labeled as 2
+This project provides a comprehensive package for Natural Neighbor-based outlier detection:
 
-## References
+* **FuNaN Methods:** Full implementation of the various FuNaN strategies described in the paper.
+* **Other NaN Algorithms:** Implementations of comparable Natural Neighbors-based outlier detection algorithms for benchmarking.
+* **Computational Datasets:** The same datasets used in the paper's computational experiments are included for direct replication of results.
 
-- FuNaN Paper: Saltos, R., Weber, R., & Pedrycz, W. (2025). Fuzzy natural neighbors for outlier detection. Applied Soft Computing, 114114. https://doi.org/10.1016/j.asoc.2025.114114.
+---
 
-## License
+## ⚙️ Requirements & Installation
 
-MIT
+### Requirements
+
+* **MATLAB R2024b** or higher.
+
+### Installation
+
+1.  **Download:** Clone this repository or download the ZIP file.
+2.  **Add to Path:** In MATLAB, navigate to the main directory and select **Set Path** (or use the `addpath` command) to include the entire repository folder structure.
+
+---
+
+## 🚀 Input Data Format
+
+The FuNaN code expects input data in a **MATLAB `.mat` file** with the following two variables:
+
+| Variable | Description | Format |
+| :--- | :--- | :--- |
+| `'Data'` | The data matrix where **rows are samples** and **columns are features**. | $N \times D$ Matrix |
+| `'y'` | The corresponding label vector. **Anomalies must be labeled as `2`** and normal data as `1` (or any other value). | $N \times 1$ Vector |
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions to the FuNaN project!
+
+* Feel free to submit an **Issue** for any bug reports or feature suggestions.
+* Please submit a **Pull Request** for any code improvements.
+
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License**.
+
+---
 
 ## Contributing
 
